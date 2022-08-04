@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANVAS</title>
+</head>
+
+<body>
+    <h1>Flag design using canvas tag</h1>
+    <canvas id="mycanvas3" width="300" height="400" style="border:2px solid black;"></canvas>
+    <br><br><br><br>
+    <h1>Student's Marks graph using canvas tag</h1>
+    <canvas id="mycanvas4" width="300" height="200" style="border:2px solid black;"></canvas>
+    <script>
+        let k = document.getElementById("mycanvas3")
+        let kt = k.getContext("2d")
+
+
+
+
+
+        kt.fillStyle = "orange"
+        kt.fillRect(60, 10, 180, 40)
+
+        kt.fillStyle = "white"
+        kt.fillRect(60, 50, 180, 45)
+
+        kt.fillStyle = "green"
+        kt.fillRect(60, 95, 180, 45)
+
+        kt.beginPath()
+        kt.arc(155, 73, 21, 0, 2 * Math.PI)
+        kt.strokeStyle = "blue"
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(134, 65)
+        kt.lineTo(174, 80)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(135, 73)
+        kt.lineTo(175, 73)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(175, 65)
+        kt.lineTo(134, 81)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(146, 53)
+        kt.lineTo(165, 93)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(155, 53)
+        kt.lineTo(155, 93)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(163, 53)
+        kt.lineTo(146, 93)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(139, 58)
+        kt.lineTo(170, 87)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(170, 57)
+        kt.lineTo(140, 87)
+        kt.stroke()
+
+
+        kt.strokeStyle = "black"
+        kt.lineWidth = 5
+        kt.beginPath()
+        kt.moveTo(60, 10)
+        kt.lineTo(60, 350)
+        kt.stroke()
+
+
+        let l = document.getElementById("mycanvas4")
+        let lt = l.getContext("2d")
+
+        lt.strokeStyle = "black"
+        lt.lineWidth = 3
+
+        lt.beginPath()
+        lt.moveTo(10, 10)
+        lt.lineTo(12, 150)
+        lt.stroke()
+
+
+
+        lt.beginPath()
+        lt.moveTo(10, 150)
+        lt.lineTo(200, 150)
+        lt.stroke()
+
+        lt.beginPath()
+        lt.fillStyle = "yellow"
+        lt.fillRect(30, 100, 40, 48)
+
+        lt.beginPath()
+        lt.fillStyle = "green"
+        lt.fillRect(60, 69, 30, 80)
+
+        lt.beginPath()
+        lt.fillStyle = "blue"
+        lt.fillRect(90, 104, 30, 45)
+    </script>
+</body>
+
+</html>

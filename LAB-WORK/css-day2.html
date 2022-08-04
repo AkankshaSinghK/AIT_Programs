@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and Id in CSS</title>
+    <!-- <link rel="stylesheet" href="externalstyle.css"> -->
+    <style>
+        h1.one {
+            border: 5px solid rgb(177, 237, 93);
+            margin-bottom: 2%;
+            padding-left: 2%;
+            padding-bottom: 2%;
+        }
+        
+        div.one {
+            border: 15px groove rgb(247, 81, 81);
+            margin-bottom: 5%;
+            padding-left: 2%;
+            box-shadow: 5px 10px 5px 10px rgb(233, 132, 132);
+        }
+        
+        #three {
+            border: 15px dashed rgb(173, 241, 46);
+            margin-bottom: 2%;
+            padding-left: 2%;
+        }
+        
+        #four {
+            border: 15px dotted rgb(46, 56, 241);
+            margin-bottom: 2%;
+            padding-left: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cascading Stylesheet</h1>
+    <div class="one">
+        <h1 class="one"> I am a heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incclassunt dolorem odit quos suscipit asperiores laboriosam sed facere atque libero? Nesciunt qui sed corporis obcaecati perferendis ut dignissimos illum eaque?</p>
+    </div>
+    <div id="three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt dolorem odit quos suscipit asperiores laboriosam sed facere atque libero? Nesciunt qui sed corporis obcaecati perferendis ut dignissimos illum eaque?</p>
+    </div>
+    <div class="one">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt dolorem odit quos suscipit asperiores laboriosam sed facere atque libero? Nesciunt qui sed corporis obcaecati perferendis ut dignissimos illum eaque?</p>
+    </div>
+    <div id="four">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt dolorem odit quos suscipit asperiores laboriosam sed facere atque libero? Nesciunt qui sed corporis obcaecati perferendis ut dignissimos illum eaque?</p>
+    </div>
+</body>
+
+</html>

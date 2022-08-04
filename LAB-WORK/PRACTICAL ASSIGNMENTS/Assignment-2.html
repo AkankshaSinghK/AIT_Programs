@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANVAS</title>
+</head>
+
+<body>
+    <h1>Canvas Assignment </h1>
+    <canvas id="mycanvas1" width="300" height="200" style="border:4px solid black;"></canvas><br><br><br>
+    <canvas id="mycanvas2" width="300" height="200" style="border:4px solid black;"></canvas>
+
+    <script>
+        let i = document.getElementById("mycanvas1")
+        let it = i.getContext("2d")
+
+        var grd = it.createLinearGradient(0, 0, 200, 0)
+        grd.addColorStop(0, "blue");
+        grd.addColorStop(1, "white");
+        it.fillStyle = grd
+        it.fillRect(130, 130, 170, 60)
+
+        it.fillStyle = "green"
+        it.font = "20px algerian"
+        it.fillText("Kusum Pareek", 30, 120)
+
+        it.shadowBlur = 20
+        it.shadowOffsetY = -20
+        it.shadowColor = "black"
+        it.fillStyle = "aquamarine"
+        it.fillRect(10, 30, 120, 50)
+        it.clearRect(20, 40, 70, 30)
+
+        let j = document.getElementById("mycanvas2")
+        let jt = j.getContext("2d")
+
+        jt.strokeStyle = "brown"
+        jt.moveTo(0, 0)
+        jt.lineTo(50, 50)
+        jt.moveTo(50, 0)
+        jt.lineTo(0, 50)
+        jt.stroke()
+
+        jt.beginPath()
+        jt.arc(120, 70, 50, 0, 2 * Math.PI)
+        jt.stroke();
+
+        jt.beginPath()
+        jt.moveTo(200, 10)
+        jt.lineTo(200, 100)
+        jt.moveTo(200, 100)
+        jt.lineTo(290, 100)
+        jt.stroke()
+    </script>
+</body>
+
+</html>

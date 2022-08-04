@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANVAS</title>
+</head>
+
+<body>
+    <canvas id="mycanvas1" width="300" height="200" style="border:2px solid black;"></canvas>
+    <canvas id="mycanvas2" width="300" height="200" style="border:2px solid black;"></canvas>
+    <canvas id="mycanvas3" width="300" height="200" style="border:2px solid black;"></canvas>
+    <canvas id="mycanvas4" width="300" height="200" style="border:2px solid black;"></canvas>
+    <script>
+        let i = document.getElementById("mycanvas1")
+        let it = i.getContext("2d")
+        it.shadowBlur = 20
+        it.shadowOffsetX = 20
+        it.shadowColor = "black"
+        it.fillStyle = "aquamarine"
+        it.fillRect(110, 110, 130, 50)
+
+        it.shadowBlur = 20
+        it.shadowOffsetY = -20
+        it.shadowColor = "black"
+        it.fillStyle = "aquamarine"
+        it.fillRect(10, 10, 120, 50)
+        it.clearRect(20, 20, 50, 10)
+
+        it.fillStyle = "green"
+        it.font = "20px algerian"
+        it.fillText("Kusum Pareek", 30, 60)
+
+        /*
+                it.fillStyle = "aquamarine"
+                it.fillRect(10, 10, 120, 50)
+                it.fillStyle = "turquoise"
+                it.fillRect(30, 30, 130, 50)
+                it.fillStyle = "aquamarine"
+                it.fillRect(55, 55, 140, 50)
+                it.fillStyle = "turquoise"
+                it.fillRect(80, 80, 150, 50)
+                it.fillStyle = "aquamarine"
+                it.fillRect(110, 110, 160, 50)
+
+        */
+
+        // ASSIGNMENT FLAG,GRAPH FOR 3 STUDENTs RESULT  ,TIC-TAC-TOE
+
+        let j = document.getElementById("mycanvas2")
+        let jt = j.getContext("2d")
+        jt.moveTo(0, 0)
+        jt.lineTo(50, 50)
+        jt.moveTo(50, 0)
+        jt.lineTo(0, 50)
+        jt.stroke()
+        jt.beginPath()
+        jt.arc(120, 70, 50, 0, 2 * Math.PI)
+        jt.stroke();
+
+        let k = document.getElementById("mycanvas3")
+        let kt = k.getContext("2d")
+
+        kt.fillStyle = "brown"
+        kt.beginPath()
+        kt.moveTo(10, 10)
+        kt.lineTo(10, 50)
+        kt.stroke()
+
+
+        kt.fillStyle = "orange"
+        kt.fillRect(60, 10, 150, 40)
+
+        kt.fillStyle = "white"
+        kt.fillRect(60, 50, 150, 45)
+
+        kt.fillStyle = "green"
+        kt.fillRect(60, 95, 150, 45)
+
+        kt.beginPath()
+        kt.arc(135, 73, 21, 0, 2 * Math.PI)
+        kt.strokeStyle = "blue"
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(114, 65)
+        kt.lineTo(154, 80)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(115, 73)
+        kt.lineTo(155, 73)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(155, 65)
+        kt.lineTo(114, 81)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(126, 53)
+        kt.lineTo(145, 93)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(135, 53)
+        kt.lineTo(135, 93)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(143, 53)
+        kt.lineTo(126, 93)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(119, 58)
+        kt.lineTo(150, 87)
+        kt.stroke()
+
+        kt.beginPath()
+        kt.moveTo(150, 57)
+        kt.lineTo(120, 87)
+        kt.stroke()
+
+        let l = document.getElementById("mycanvas4")
+        let lt = l.getContext("2d")
+
+        lt.strokeStyle = "black"
+
+        lt.beginPath()
+        lt.moveTo(10, 10)
+        lt.lineTo(10, 150)
+        lt.stroke()
+
+
+
+        lt.beginPath()
+        lt.moveTo(10, 150)
+        lt.lineTo(200, 150)
+        lt.stroke()
+
+        lt.beginPath()
+        lt.fillStyle = "yellow"
+        lt.fillRect(15, 100, 20, 48)
+
+        lt.beginPath()
+        lt.fillStyle = "green"
+        lt.fillRect(36, 70, 30, 80)
+
+        lt.beginPath()
+        lt.fillStyle = "blue"
+        lt.fillRect(67, 106, 28, 45)
+    </script>
+</body>
+
+</html>

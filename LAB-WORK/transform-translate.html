@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            color: white;
+        }
+        
+        .innerdiv {
+            border: 5px dotted rgb(18, 81, 11);
+            background-color: rgba(53, 165, 165, 0.615);
+            width: 500px;
+            padding-left: 15px;
+            margin-bottom: 10px;
+            height: 300px;
+            transition: height 2s;
+        }
+        
+        .innerdiv:hover {
+            /* transform: skew(20deg, 20deg);*/
+            height: 500px;
+            transition-delay: 2s;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="border: 5px dashed brown;background-color:rgba(173, 223, 80, 0.827);padding-left:15px;">
+        <h1>My Outer Div</h1>
+        <div class="innerdiv">
+            <h1>My inner div</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt doloremque molestiae fugiat laboriosam quia commodi delectus fuga dicta alias dignissimos molestias, incidunt quam vitae ad, quod quisquam repellat. Ut!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
